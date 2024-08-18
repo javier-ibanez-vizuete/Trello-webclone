@@ -37,20 +37,30 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 /* -------AQUI EMPIEZA EL PROYECTO */
 
 :root {
-    --bg-color: #c3e3f8;
-    --accent-bg-color: #E6FCFF;
+    --bg-color: linear-gradient(to top, #FFFFFF 0%, #63E3F4 15%, #FFFFFF 100%);
+    --accent-bg-color: linear-gradient(to bottom left, #EC64D8 0%, #C83DC6 14%, #690177 70%);
     --accent-secondary-bg-color: #DEEBFF;
     --text-color: #091E42;
-    --text-light-color: #172b4d;
+    --text-light-color: #989898;
     --text-secondary-color: #fff;
     --primary-color: #0065FF;
     --primary-color-dark: #0747a6;
 
     --container-nav: 90%;
     --container: 90%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .container-nav {
@@ -64,7 +74,7 @@ a {
 }
 
 body {
-    background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 /* ---------------NAV----------- */
@@ -112,4 +122,107 @@ body {
 
 .aside-desktop {
     display: none;
+}
+
+/* ----------------------------HEADER-------------------------- */
+
+.not-on-mobile {
+    display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: var(--accent-bg-color);
+    padding-top: 120px;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+
+    text-align: center;
+    color: var(--text-secondary-color);
+    position: relative;
+}
+
+.header .texts-and-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.texts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header .buttons-container button {
+    color: var(--text-secondary-color);
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+}
+
+.header .buttons-container button:hover {
+    background-color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-dark);
+}
+
+.header .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons-container .video-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: var(--text-light-color);
+}
+
+.video-header-container .logo-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+}
+
+.container .header-image-mobile {
+    position: absolute;
+    width: 300px;
+    bottom: -200px;
+}
+
+.not-on-mobile-only {
+    display: none;
+}
+
+.header .wave-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 0 80px;
+}
+
+.header .wave-image img {
+    height: 100%;
 }
