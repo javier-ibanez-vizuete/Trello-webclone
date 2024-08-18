@@ -37,7 +37,79 @@ a {
     text-decoration: none;
 }
 
+/* -------AQUI EMPIEZA EL PROYECTO */
+
+:root {
+    --bg-color: #c3e3f8;
+    --accent-bg-color: #E6FCFF;
+    --accent-secondary-bg-color: #DEEBFF;
+    --text-color: #091E42;
+    --text-light-color: #172b4d;
+    --text-secondary-color: #fff;
+    --primary-color: #0065FF;
+    --primary-color-dark: #0747a6;
+
+    --container-nav: 90%;
+    --container: 90%;
+}
+
+.container-nav {
+    width: var(--container-nav);
+    margin: 0 auto;
+}
+
+.container {
+    width: var(--container);
+    margin: 0 auto;
+}
 
 body {
-    background-color: yellow;
+    background-color: var(--bg-color);
+}
+
+/* ---------------NAV----------- */
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0px;
+}
+
+.mobile-nav .logo-nav {
+    width: 100px;
+}
+
+.mobile-nav .icon-burger {
+    width: 40px;
+}
+
+.mobile-nav img {
+    width: 100%;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+/* ----------------------ASIDE------------------------ */
+
+.aside-mobile {
+    padding: 16px 20px;
+}
+
+.aside-style {
+    background-color: var(--accent-secondary-bg-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.aside-style a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color)
+}
+
+.aside-desktop {
+    display: none;
 }

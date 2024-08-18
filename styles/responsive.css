@@ -1,3 +1,149 @@
-body {
-    background-color: bisque;
+/* --MEDIA QUERY PARA DISPOSITIVOS TABLETS */
+@media (min-width: 481px) and (max-width: 1023px) {
+    :root {
+        --bg-color: #cfe9f9;
+        --container-nav: 95%
+        --container: 85%;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+    }
+
+    /* -----------------NAV------------ */
+
+    /* ---------------------------ASIDE------------------------ */
+    .aside-mobile p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* --MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO */
+@media (min-width: 1024px) {
+    :root {
+        --bg-color: #b4fce8;
+        --container-nav: 100%;
+        --container: 85%;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+    }
+
+    /* ------------------NAV------------------- */
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 12px;
+    }
+
+    .logo-menu-nav-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex: 1;
+
+        padding: 12px 0px;
+        font-size: 16px;
+    }
+
+    .logo-menu-nav-container .logo-nav {
+        width: 110px;
+    }
+
+    .logo-nav img {
+        width: 100%;
+    }
+
+    .logo-menu-nav-container ul {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .logo-menu-nav-container li {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .logo-menu-nav-container .arrow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 10px;
+    }
+
+    .logo-menu-nav-container li img {
+        width: 100%;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: flex-end;
+        align-self: stretch;
+        flex-basis: 35%
+    }
+
+    .buttons-container button {
+        font-size: 20px;
+        padding: 8px 20px;
+        text-align: left;
+    }
+
+    .btn-logging {
+        border: none;
+        background-color: transparent;
+    }
+
+    .btn-download {
+        border: none;
+        background-color: var(--primary-color);
+    }
+
+    /* -----------------------------ASIDE----------------------- */
+    .aside-mobile {
+        display: none;
+    }
+
+    .aside-desktop {
+        display: block;
+        padding: 16px 16px;
+    }
+
+
+}
+
+
+/* --MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO XXL */
+@media (min-width: 1440px) {
+    :root {
+        --bg-color: #e8cefd;
+        --container-nav: 90%;
+        --container: 80%;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+    }
+
+    /* -----------------------NAV------------------ */
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        padding-left: 0px;
+    }
+
+    /* ---------------------------------ASIDE------------------------ */
 }
