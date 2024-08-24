@@ -135,7 +135,9 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    background: var(--accent-bg-color);
+    background: url(/media/images/image-wave-separator-header.svg) center bottom -0.5px / 100% 14% no-repeat scroll padding-box border-box, linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    background-blend-mode: normal, normal;
+    color: rgb(255, 255, 255);
     padding-top: 120px;
 }
 
@@ -159,7 +161,7 @@ body {
     font-size: 20px;
     line-height: 1.3;
     font-weight: 400;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .texts-container {
@@ -209,7 +211,7 @@ body {
 .container .header-image-mobile {
     position: absolute;
     width: 300px;
-    bottom: -200px;
+    bottom: -80px;
 }
 
 .not-on-mobile-only {
