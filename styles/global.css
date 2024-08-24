@@ -50,8 +50,13 @@ img {
     --text-color: #091E42;
     --text-light-color: #989898;
     --text-secondary-color: #fff;
+    --text-accent-color: #004ECB;
     --primary-color: #0065FF;
     --primary-color-dark: #0747a6;
+    --bg-card-1: #02C7E5;
+    --bg-card-2: #FFC400;
+    --bg-card-3: #57D9A3;
+    --text-bg-card: #fff;
 
     --container-nav: 90%;
     --container: 90%;
@@ -61,6 +66,16 @@ h1 {
     font-size: 32px;
     font-weight: 500;
     line-height: 1.2;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .container-nav {
@@ -73,8 +88,12 @@ h1 {
     margin: 0 auto;
 }
 
-body {
-    overflow-x: hidden;
+.mobile-and-tablet {
+    display: inherit;
+}
+
+.desktop-and-xxl {
+    display: none;
 }
 
 /* ---------------NAV----------- */
@@ -227,4 +246,93 @@ body {
 
 .header .wave-image img {
     height: 100%;
+}
+
+/* -------------------------MAIN-------------------------    */
+
+/* ------------------------ABC SECTION------------------- */
+
+.article-abc-card-container {
+    border-radius: 8px;
+    padding-left: 8px;
+}
+
+.bg-card-1 {
+    background-color: var(--bg-card-1);
+}
+
+.bg-card-2 {
+    background-color: var(--bg-card-2);
+}
+
+.bg-card-3 {
+    background-color: var(--bg-card-3);
+}
+
+.text-bg-card {
+    background-color: var(--text-bg-card);
+}
+
+#abc-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(179, 244, 254, 1) 100%);
+
+    padding: 80px 0px;
+}
+
+.abc-section,
+.section-abc-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.abc-titles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-abc-header p,
+.section-abc-header a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.section-abc-header p {
+    color: var(--text-color);
+}
+
+.section-abc-header a {
+    color: var(--text-accent-color);
+    text-decoration-line: underline;
+}
+
+.section-abc-mobile-and-tablet-articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.abc-mobile-and-tablet-article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.abc-mobile-and-tablet-image-container img {
+    border-radius: 8px;
+}
+
+.abc-mobile-and-tablet-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    padding: 12px;
+}
+
+.abc-mobile-and-tablet-text-container h4, .abc-mobile-and-tablet-text-container p {
+    font-size: 14px;
+    line-height: 1.4;
 }
