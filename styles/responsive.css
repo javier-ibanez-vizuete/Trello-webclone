@@ -4,7 +4,7 @@
         --bg-color: linear-gradient(to top, #FFFFFF 0%, #63E3F4 15%, #FFFFFF 100%);
         --container-nav: 95%;
         --container: 80%;
-        --semi-container:90%;
+        --semi-container: 90%;
 
     }
 
@@ -88,8 +88,23 @@
 
     /* ----------------------ACTION SECTION---------------- */
 
-    .action-section-titles-container h3, .action-section-titles-container h2 {
+    .action-section-titles-container h3,
+    .action-section-titles-container h2 {
         width: 40%;
+    }
+
+    .bg-custom-card {
+        flex: 1 0 440px;
+    }
+
+    .action-section-bottom-container p {
+        font-size: 18px;
+    }
+
+    .action-section-bottom-container button {
+        padding: 12px 16px;
+        font-size: 12px;
+        font-weight: 600;
     }
 }
 
@@ -100,7 +115,7 @@
         --bg-color: linear-gradient(to top, #FFFFFF 0%, #63E3F4 15%, #FFFFFF 100%);
         --container-nav: 100%;
         --container: 86%;
-        --semi-container:93%;
+        --semi-container: 93%;
 
     }
 
@@ -382,11 +397,11 @@
         z-index: -3;
         opacity: 0%;
     }
-    
+
     .abc-desktop-images-container {
         width: 60%;
     }
-    
+
     .bg-card-2:hover .desktop-abc-lists-image-container,
     .bg-card-3:hover .desktop-abc-cards-image-container {
         display: block;
@@ -397,6 +412,52 @@
         right: 0;
         width: 60%;
     }
+
+    /* ----------------------ACTION SECTION----------------- */
+
+    .action-section-titles-container h3,
+    .action-section-titles-container h2 {
+        width: 55%;
+    }
+
+    .bg-custom-card {
+        flex: 1 0 280px;
+    }
+
+    .custom-card-image-container {
+        margin-top: -16px;
+    }
+
+    .bg-custom-card .bg-custom-card-text {
+        gap: 12px;
+
+        padding: 0px 20px 20px 20px;
+    }
+
+
+    .custom-card-text-container h4 {
+        font-size: 22px;
+    }
+
+    .custom-card-text-container p {
+        font-size: 17px;
+        padding-right: 24px;
+    }
+
+    .action-section-bottom-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .action-section-bottom-container p {
+        font-size: 18px;
+    }
+
+    .action-section-bottom-container button {
+        flex: 1 0 18%;
+    }
 }
 
 /* --MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO XXL */
@@ -406,7 +467,7 @@
         ;
         --container-nav: 90%;
         --container: 80%;
-        --semi-container:90%;
+        --semi-container: 90%;
 
     }
 
@@ -524,4 +585,23 @@
         width: 70%;
     }
 
+    /* ------------------------ACTION SECTION-------------- */
+
+    .action-section-titles-container h3,
+    .action-section-titles-container h2 {
+        width: 45%;
+    }
+
+    .action-section-custom-cards-container {
+        gap: 32px;
+    }
+
+    .bg-custom-card {
+        flex: 1 0 340px;
+    }
+
+    .custom-card-text-container p {
+
+        font-size: 18px;
+    }
 }

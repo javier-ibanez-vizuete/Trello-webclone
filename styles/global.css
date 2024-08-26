@@ -66,7 +66,7 @@ img {
 
     --container-nav: 90%;
     --container: 90%;
-    --semi-container:95%;
+    --semi-container: 95%;
 }
 
 h1 {
@@ -383,7 +383,28 @@ h3 {
 
 /* ------------------ACTION SECTION------------------- */
 
+.bg-custom-card {
+    border-radius: 8px;
+    padding-top: 32px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    flex: 1 0 280px;
+}
+.bg-custom-card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
+    transition: 0.5s ease;
+}
+
+.bg-custom-card-text {
+    background-color: var(--text-bg-card);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 #action-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
     padding: 40px 0px 60px;
 }
 
@@ -391,8 +412,81 @@ h3 {
     margin-right: 0px;
 }
 
+.action-section-titles-container,
+.action-section-bottom-container {
+    padding-left: 16px;
+}
+
 .action-section-titles-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.action-section-custom-cards-container {
+    display: flex;
+    gap: 24px;
+
+    overflow-x: scroll;
+    padding: 16px;
+}
+
+
+.bg-custom-card .bg-custom-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    height: 100%;
+    padding: 0px 16px 16px 16px;
+}
+
+.custom-card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--text-bg-card);
+    padding: 8px;
+    width: 44px;
+    border-radius: 8px;
+    margin-top: -24px;
+}
+
+.custom-card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.custom-card-text-container p {
+    flex: 1;
+    
+    font-size: 14px;
+    padding-right: 24px;
+    line-height: 1.5;
+}
+
+.action-section-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.action-section-bottom-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.action-section-bottom-container button {
+    align-self: flex-start;
+    
+    padding: 12px;
+    font-size: 10px;
+    line-height: 1.4;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
 }
