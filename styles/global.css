@@ -57,9 +57,16 @@ img {
     --bg-card-2: #FFC400;
     --bg-card-3: #57D9A3;
     --text-bg-card: #fff;
+    --bg-custom-card-1: #02C7E5;
+    --bg-custom-card-2: #FFC400;
+    --bg-custom-card-3: #57D9A3;
+    --bg-custom-card-4: #FF7452;
+    --bg-custom-card-5: #2684FF;
+    --bg-custom-card-6: #F99CDB;
 
     --container-nav: 90%;
     --container: 90%;
+    --semi-container:95%;
 }
 
 h1 {
@@ -88,12 +95,63 @@ h3 {
     margin: 0 auto;
 }
 
+.semi-container {
+    width: var(--semi-container);
+    margin: 0 auto;
+}
+
 .mobile-and-tablet {
     display: inherit;
 }
 
 .desktop-and-xxl {
     display: none;
+}
+
+.bg-card-1,
+.bg-card-2,
+.bg-card-3 {
+    cursor: pointer;
+}
+
+.bg-card-1 {
+    background-color: var(--bg-card-1);
+}
+
+.bg-card-2 {
+    background-color: var(--bg-card-2);
+}
+
+.bg-card-3 {
+    background-color: var(--bg-card-3);
+}
+
+.text-bg-card {
+    background-color: var(--text-bg-card);
+}
+
+.bg-custom-card-1 {
+    background-color: var(--bg-custom-card-1);
+}
+
+.bg-custom-card-2 {
+    background-color: var(--bg-custom-card-2);
+}
+
+.bg-custom-card-3 {
+    background-color: var(--bg-custom-card-3);
+}
+
+.bg-custom-card-4 {
+    background-color: var(--bg-custom-card-4);
+}
+
+.bg-custom-card-5 {
+    background-color: var(--bg-custom-card-5);
+}
+
+.bg-custom-card-6 {
+    background-color: var(--bg-custom-card-6);
 }
 
 /* ---------------NAV----------- */
@@ -257,25 +315,8 @@ h3 {
     padding-left: 8px;
 }
 
-.bg-card-1 {
-    background-color: var(--bg-card-1);
-}
-
-.bg-card-2 {
-    background-color: var(--bg-card-2);
-}
-
-.bg-card-3 {
-    background-color: var(--bg-card-3);
-}
-
-.text-bg-card {
-    background-color: var(--text-bg-card);
-}
-
 #abc-section {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(179, 244, 254, 1) 100%);
-
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(179, 244, 254, 0.4) 100%);
     padding: 80px 0px;
 }
 
@@ -328,11 +369,30 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
     padding: 12px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-.abc-mobile-and-tablet-text-container h4, .abc-mobile-and-tablet-text-container p {
+.abc-mobile-and-tablet-text-container h4,
+.abc-mobile-and-tablet-text-container p {
     font-size: 14px;
     line-height: 1.4;
+}
+
+/* ------------------ACTION SECTION------------------- */
+
+#action-section {
+    padding: 40px 0px 60px;
+}
+
+.action-section-custom-cards-container {
+    margin-right: 0px;
+}
+
+.action-section-titles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }

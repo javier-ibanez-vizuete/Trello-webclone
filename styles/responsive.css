@@ -4,6 +4,8 @@
         --bg-color: linear-gradient(to top, #FFFFFF 0%, #63E3F4 15%, #FFFFFF 100%);
         --container-nav: 95%;
         --container: 80%;
+        --semi-container:90%;
+
     }
 
     h1 {
@@ -83,6 +85,12 @@
     .section-abc-header a {
         font-size: 18px;
     }
+
+    /* ----------------------ACTION SECTION---------------- */
+
+    .action-section-titles-container h3, .action-section-titles-container h2 {
+        width: 40%;
+    }
 }
 
 
@@ -91,7 +99,9 @@
     :root {
         --bg-color: linear-gradient(to top, #FFFFFF 0%, #63E3F4 15%, #FFFFFF 100%);
         --container-nav: 100%;
-        --container: 85%;
+        --container: 86%;
+        --semi-container:93%;
+
     }
 
     h2 {
@@ -283,9 +293,33 @@
         background-color: transparent;
     }
 
+    .bg-card-1:hover,
+    .bg-card-2:hover,
+    .bg-card-3:hover,
+    .article-abc-card-container:hover {
+        transition: 0.3s ease-in-out;
+    }
+
+    .bg-card-1:hover {
+        background-color: var(--bg-card-1);
+    }
+
+    .bg-card-2:hover {
+        background-color: var(--bg-card-2);
+    }
+
+    .bg-card-3:hover {
+        background-color: var(--bg-card-3);
+    }
+
+
     .article-abc-card-container:hover {
         border-radius: 8px;
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .article-abc-card-container:hover .text-bg-card {
+        background-color: var(--text-bg-card);
     }
 
 
@@ -299,16 +333,71 @@
 
     .section-abc-desktop-articles-container {
         display: flex;
-        gap: 20px;
+
+        position: relative;
     }
 
     .abc-desktop-cards-container {
         display: flex;
         flex-direction: column;
-        gap: 20px
+        gap: 20px;
+        width: 40%;
+
+        padding-right: 40px;
+
+    }
+
+    .article-abc-card-container {
+        display: flex;
+        flex: 1;
+    }
+
+    .abc-desktop-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        gap: 12px;
+
+        padding: 12px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .abc-desktop-text-container h4,
+    .abc-desktop-text-container p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .abc-desktop-text-container p {
+        flex: 1;
+
+        font-weight: 600;
+    }
+
+    .desktop-abc-lists-image-container,
+    .desktop-abc-cards-image-container {
+        display: none;
+        z-index: -3;
+        opacity: 0%;
+    }
+    
+    .abc-desktop-images-container {
+        width: 60%;
+    }
+    
+    .bg-card-2:hover .desktop-abc-lists-image-container,
+    .bg-card-3:hover .desktop-abc-cards-image-container {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        opacity: 100%;
+        top: 0;
+        right: 0;
+        width: 60%;
     }
 }
-
 
 /* --MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO XXL */
 @media (min-width: 1440px) {
@@ -317,6 +406,8 @@
         ;
         --container-nav: 90%;
         --container: 80%;
+        --semi-container:90%;
+
     }
 
     h2 {
@@ -409,4 +500,28 @@
         font-weight: 600;
         line-height: 1.5;
     }
+
+    .abc-desktop-cards-container {
+        width: 30%;
+        padding-right: 48px;
+    }
+
+    .abc-desktop-text-container {
+        gap: 8px;
+    }
+
+    .abc-desktop-text-container h4,
+    .abc-desktop-text-container p {
+        font-size: 14px;
+    }
+
+    .abc-desktop-images-container {
+        width: 70%;
+    }
+
+    .bg-card-2:hover .desktop-abc-lists-image-container,
+    .bg-card-3:hover .desktop-abc-cards-image-container {
+        width: 70%;
+    }
+
 }
