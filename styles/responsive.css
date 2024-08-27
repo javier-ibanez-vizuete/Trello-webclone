@@ -592,8 +592,8 @@
         --bg-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(93, 231, 251, 1) 100%);
         ;
         --container-nav: 90%;
-        --container: 80%;
-        --semi-container: 90%;
+        --container: 70%;
+        --semi-container: 85%;
 
     }
 
@@ -745,7 +745,7 @@
     .view-card-text-container {
         gap: 16px;
         
-        padding: 0px 40px;
+        padding: 0px 20px;
     }
 
     .view-card-text-container h3 {
@@ -753,12 +753,23 @@
     }
 
     .view-card-text-container p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.6;
     }
 
     .view-card-text-container a {
         font-size: 20px;
         line-height: 1.5;
+    }
+
+    .bottom-view-card {
+        margin-bottom: -100px;
+    }
+
+    /* -----------------------MORE TRELLO SECTION */
+
+    #more-trello-section {
+        height: 200px;
+        padding: 160px 0px 40px;
     }
 }
