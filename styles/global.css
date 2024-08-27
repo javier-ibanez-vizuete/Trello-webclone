@@ -154,6 +154,10 @@ h3 {
     background-color: var(--bg-custom-card-6);
 }
 
+.action-section-custom-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
 /* ---------------NAV----------- */
 .mobile-nav {
     display: flex;
@@ -389,6 +393,7 @@ h3 {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     flex: 1 0 280px;
 }
+
 .bg-custom-card:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
     transition: 0.5s ease;
@@ -462,7 +467,7 @@ h3 {
 
 .custom-card-text-container p {
     flex: 1;
-    
+
     font-size: 14px;
     padding-right: 24px;
     line-height: 1.5;
@@ -482,11 +487,102 @@ h3 {
 
 .action-section-bottom-container button {
     align-self: flex-start;
-    
+
     padding: 12px;
     font-size: 10px;
     line-height: 1.4;
     background-color: transparent;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+}
+
+/* -----------------OTHER WAY SECTION----------------- */
+
+#other-way-section {
+    padding-top: 20px;
+    background-color: var(--primary-color);
+}
+
+.other-way-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.other-way-section-titles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: center;
+    color: var(--text-secondary-color)
+}
+
+.other-way-section-titles-container h2 {
+    font-size: 18px;
+}
+
+.other-way-section-titles-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-bottom: 12px;
+}
+
+.other-way-section-titles-container button {
+    align-self: center;
+
+    padding: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: var(--text-secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.other-way-section-titles-container button:hover {
+    filter: opacity(90%);
+    transition: 0.5s ease-out;
+}
+
+.view-card-style {
+    padding: 16px;
+    background-color: var(--text-bg-card);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.bottom-view-card {
+    margin-bottom: -72px;
+}
+
+.view-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.view-card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.view-card-text-container p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.view-card-text-container a {
+    color: var(--text-accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* -------------------------MORE TRELLO SECTION------------------- */
+
+#more-trello-section {
+    height: 200px;
+    padding: 100px 0px 40px;
 }
