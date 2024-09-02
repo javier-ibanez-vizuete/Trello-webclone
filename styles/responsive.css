@@ -130,6 +130,47 @@
     .view-card-text-container p {
         font-size: 18px;
     }
+
+    /* --------------MORE TRELLO SECTION-------------------- */
+
+    .more-trello-section-header-container {
+        max-width: 50%;
+    }
+
+    .more-trello-section-widgets-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .widget-container {
+        flex: 1 0 280px;
+    
+        max-width: 300px;
+    }
+
+    .middle-widget {
+        margin: 0 auto;
+    }
+    
+    .widget-image-container {
+        width: 80px;
+    }
+
+    .widget-text-and-button-container {
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .widget-text-container p {
+        font-size: 16px;
+    }
+    
+    .widget-text-and-button-container button {
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
 
 
@@ -583,8 +624,36 @@
         font-size: 20px;
         line-height: 1.7;
     }
+
+    /* ----------------------MORE TRELLO SECTION------------------- */
+
+    .more-trello-section-widgets-container {
+        gap: 24px;
+    }
     
+    .widget-container {
+        gap: 28px;
+        
+        max-width: 272px;
+    }
+
+    .middle-widget {
+        margin: 0 0;
+    }
+
+    .widget-text-container h4 {
+        font-size: 20px;
+    }
+
+    .widget-text-container p {
+        font-size: 17px;
+    }
+    
+    .widget-text-and-button-container button {
+        font-size: 14px;
+    }
 }
+
 
 /* --MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO XXL */
 @media (min-width: 1440px) {
@@ -769,7 +838,13 @@
     /* -----------------------MORE TRELLO SECTION */
 
     #more-trello-section {
-        height: 200px;
-        padding: 160px 0px 40px;
+        padding: 160px 0px 80px;
+    }
+
+    .widget-container {
+        max-width: 33%;
+    }
+    .widget-text-container p {
+        font-size: 16px;
     }
 }

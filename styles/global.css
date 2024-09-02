@@ -583,6 +583,74 @@ h3 {
 /* -------------------------MORE TRELLO SECTION------------------- */
 
 #more-trello-section {
-    height: 200px;
-    padding: 100px 0px 40px;
+    padding: 100px 0px 80px;
+}
+
+.more-trello-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.more-trello-section-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.more-trello-section-titles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.more-trello-section-widgets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+
+    padding: 20px;
+    background-color: #FAFBFC;
+    border-radius: 8px;
+    max-width: 380px;
+}
+
+.widget-image-container {
+    align-self: flex-start;
+
+    width: 100px;
+}
+
+.widget-text-and-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.widget-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.widget-text-container p {
+    font-size: 17px;
+}
+
+.widget-text-and-button-container button {
+    align-self: flex-start;
+
+    padding: 12px;
+    background-color: var(--text-secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
 }
