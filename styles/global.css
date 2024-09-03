@@ -257,11 +257,13 @@ h3 {
     padding: 16px;
     border-radius: 4px;
     border: 1px solid var(--primary-color);
+    cursor: pointer;
 }
 
 .header .buttons-container button:hover {
     background-color: var(--primary-color-dark);
     border: 1px solid var(--primary-color-dark);
+    transition: 0.5s ease;
 }
 
 .header .buttons-container {
@@ -494,6 +496,13 @@ h3 {
     background-color: transparent;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.action-section-bottom-container button:hover {
+    background-color: var(--accent-secondary-bg-color);
+    transition: 0.5s ease;
 }
 
 /* -----------------OTHER WAY SECTION----------------- */
@@ -538,11 +547,12 @@ h3 {
     background-color: var(--text-secondary-color);
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .other-way-section-titles-container button:hover {
-    filter: opacity(90%);
-    transition: 0.5s ease-out;
+    background-color: var(--accent-secondary-bg-color);
+    transition: 0.5s ease;
 }
 
 .view-card-style {
@@ -656,6 +666,13 @@ h3 {
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+
+.widget-text-and-button-container button:hover {
+    background-color: var(--accent-secondary-bg-color);
+    transition: 0.5s ease;
 }
 
 /* ------------------NEWS SECTION-------------------- */
@@ -789,4 +806,141 @@ h3 {
     font-size: 12px;
     text-decoration-line: underline;
     color: var(--text-light-color);
+}
+
+/* ------------------------PAYMENT SECTION--------------------- */
+
+#payment-section {
+    padding: 40px 0;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 10%, rgba(179, 244, 254, 0.4) 100%);
+}
+
+.payment-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-section-titles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    text-align: center;
+    color: var(--text-color);
+}
+
+.payment-section-titles-container h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.payment-section-titles-container p {
+    line-height: 1.5;
+}
+
+.payment-section-titles-container button {
+    align-self: center;
+    
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+}
+
+.payment-section-titles-container button:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+    transition: 0.5s ease;
+}
+
+.payment-plan-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.offer-plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px 12px 40px;
+    border: 1px solid var(--text-light-color);
+    background-color: var(--text-bg-card);
+}
+
+.title-price-and-description-plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.title-and-price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-and-price-container h3 {
+    font-size: 14px
+}
+
+.price-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price-plan-container h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.price-plan-container span {
+    font-size: 44px;
+    line-height: 1;
+}
+
+.price-plan-container p {
+    font-size: 10px;
+    color: var(--text-light-color);
+}
+
+.description-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.button-plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.button-plan-container button {
+    color: var(--text-color);
+    background-color: var(--text-secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.button-plan-container button:hover {
+    background-color: var(--accent-secondary-bg-color);
+    transition: 0.5s ease;
 }

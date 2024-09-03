@@ -200,6 +200,17 @@
         font-size: 30px;
         line-height: 1.4;
     }
+
+    /* -------------------------PAYMENT SECTION----------------------- */
+
+    .payment-section-titles-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .payment-section-titles-container h2 {
+        font-size: 26px;
+    }
 }
 
 
@@ -302,6 +313,7 @@
         font-size: 20px;
         padding: 8px 20px;
         text-align: left;
+        cursor: pointer;
     }
 
     .btn-logging {
@@ -313,6 +325,11 @@
         border: none;
         color: var(--text-secondary-color);
         background-color: var(--primary-color);
+    }
+    
+    .btn-download:hover {
+        background-color: var(--primary-color-dark);
+        transition: 0.5s ease;
     }
 
     /* -----------------------------ASIDE----------------------- */
@@ -721,6 +738,26 @@
         border-bottom-left-radius: 0px;
     }
 
+    /* --------------------------PAYMENT SECTION----------------------- */
+    .payment-section-titles-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+    .payment-section-titles-container h2 {
+        font-size: 34px;
+    }
+
+    .payment-section-titles-container p {
+        font-size: 22px;
+    }
+
+    .payment-section-titles-container button {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
 }
 
 
@@ -919,4 +956,10 @@
     }
 
     /* ----------------------------NEWS SECTION------------------------ */
+
+    /* --------------------------PAYMENT SECTION--------------------- */
+
+    .payment-section-titles-container p {
+        font-size: 20px;
+    }
 }
