@@ -861,7 +861,7 @@ h3 {
 .payment-plan-container {
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 12px;
 }
 
 .offer-plan-container {
@@ -873,6 +873,10 @@ h3 {
     padding: 20px 12px 40px;
     border: 1px solid var(--text-light-color);
     background-color: var(--text-bg-card);
+}
+
+.premium-plan {
+    border: 2px solid var(--primary-color);
 }
 
 .title-price-and-description-plan-container {
@@ -923,12 +927,32 @@ h3 {
     color: var(--text-color);
 }
 
+.description-plan-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-plan-container p input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.description-plan-container p input::placeholder {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 .button-plan-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 12px;
+    gap: 16px;
+    
+    text-align: center;
 }
 
 .button-plan-container button {
@@ -936,11 +960,27 @@ h3 {
     background-color: var(--text-secondary-color);
     border: 1px solid var(--primary-color);
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 12px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .button-plan-container button:hover {
     background-color: var(--accent-secondary-bg-color);
     transition: 0.5s ease;
+}
+
+.premium-plan button {
+    background-color: var(--accent-secondary-bg-color);
+}
+
+.premium-plan button:hover {
+    background-color: var(--text-secondary-color);
+    transition: 0.5 ease;
+}
+
+.button-plan-container a {
+    color: var(--text-accent-color);
+    text-decoration-line: underline;
+    font-size: 12px;
 }

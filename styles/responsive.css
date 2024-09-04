@@ -232,6 +232,9 @@
         font-size: 12px;
     }
 
+    .action-section-custom-cards-container ::-webkit-scrollbar {
+        display: initial;
+    }
 
     .mobile-and-tablet {
         display: none;
@@ -394,6 +397,10 @@
 
     .not-on-mobile-only {
         display: block;
+    }
+
+    header {
+        overflow: hidden;
     }
 
     header .header-image-desktop {
@@ -757,7 +764,41 @@
         font-size: 14px;
         padding: 12px;
     }
+
+    .payment-plan-container {
+        flex-direction: row;
+    }
     
+    .offer-plan-container {
+        gap: 20px;
+        flex: 1;
+    }
+    .title-price-and-description-plan-container {
+        flex: 1;
+        justify-content: flex-start;
+    }
+    
+    .title-and-price-container {
+        flex-basis: 112px;
+    }
+
+    .description-plan-container {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .button-plan-container {
+        flex-basis: 141px;
+    }
+
+    .button-plan-container button {
+        font-size: 18px;
+    }
+
+    .button-plan-container a {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 
@@ -962,4 +1003,18 @@
     .payment-section-titles-container p {
         font-size: 20px;
     }
+
+    .offer-plan-container {
+        gap: 28px;
+    }
+
+    .price-plan-container p {
+        font-size: 12px;
+    }
+
+    .description-plan-container {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
 }
