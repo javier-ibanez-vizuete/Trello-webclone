@@ -22,6 +22,10 @@
         font-weight: 800;
     }
 
+    .only-mobile {
+        display: none;
+    }
+
     .mobile-and-tablet {
         display: inherit;
     }
@@ -211,6 +215,16 @@
     .payment-section-titles-container h2 {
         font-size: 26px;
     }
+
+    /* ---------------------PUBLISHING SECTION-------------- */
+    body #publishing-section .not-on-mobile-only {
+        display: block;
+    }
+
+    .publishing-section-container h6 {
+        font-size: 18px;
+    }
+
 }
 
 
@@ -798,6 +812,18 @@
     .button-plan-container a {
         font-size: 16px;
         font-weight: 500;
+    }
+
+    /* -----------------PUBLISHING SECTION----------------- */
+
+    #publishing-section {
+        padding: 40px 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .publishing-section-container h6 {
+        font-size: 24px;
     }
 }
 

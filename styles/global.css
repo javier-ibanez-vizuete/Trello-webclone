@@ -984,3 +984,29 @@ h3 {
     text-decoration-line: underline;
     font-size: 12px;
 }
+
+/* ----------------PUBLISHING SECTION------------- */
+
+#publishing-section {
+    padding: 20px 0;
+}
+
+.publishing-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    text-align: center;
+}
+
+.publishing-section-container h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.publishing-brands-container {
+    display: flex;
+    justify-content: center;
+}
