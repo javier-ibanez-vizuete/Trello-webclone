@@ -1010,3 +1010,41 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
+/* ---------------SUBMIT SECTION------------- */
+
+#submit-section {
+    background: linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    padding: 40px 0px;
+}
+
+.submit-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    color: var(--text-secondary-color);
+}
+
+.submit-section-container h2 {
+    font-size: 18px;
+}
+
+.submit-section-container button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: var(--text-secondary-color);
+    font-size: 12px;
+}
+
+.submit-section-container button:hover {
+    background-color: var(--primary-color-dark);
+    transition: 0.5s ease;
+}
+
+.submit-section-container .only-mobile {
+    align-self: stretch;
+}
