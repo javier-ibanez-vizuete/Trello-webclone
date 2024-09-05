@@ -63,6 +63,7 @@ img {
     --bg-custom-card-4: #FF7452;
     --bg-custom-card-5: #2684FF;
     --bg-custom-card-6: #F99CDB;
+    --footer-bg: #172B4D;
 
     --container-nav: 90%;
     --container: 90%;
@@ -1047,4 +1048,166 @@ h3 {
 
 .submit-section-container .only-mobile {
     align-self: stretch;
+}
+
+/* ------------------------------FOOTER---------------------------- */
+/* -------------------------TOP FOOTER----------------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding: 40px 0px 60px;
+    background-color: var(--footer-bg);
+}
+
+.footer a {
+    color: var(--text-secondary-color);
+}
+
+.footer .horizontal-separator-line {
+    width: 100%;
+    background-color: var(--text-secondary-color);
+}
+
+.footer .not-full-line {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.top-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.top-footer-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer-image-container {
+    width: 120px;
+}
+
+.top-footer-logo-container a {
+    padding-right: 8px;
+}
+
+.top-footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.top-footer-listitem a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top-footer-listitem .top-footer-listitem-title {
+    font-size: 14px;
+}
+
+.top-footer-listitem .top-footer-listitem-description {
+    font-size: 12px;
+}
+
+/* -----------------------BOTTOM FOOTER------------------------- */
+
+.bottom-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.language-menu-popup {
+    display: none;
+}
+
+.bottom-footer-languages-and-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+
+    max-width: 50%;
+}
+
+.language-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.language-position-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.language-example-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+
+    color: var(--text-secondary-color);
+}
+
+.icon-language-example-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--text-secondary-color);
+}
+
+.language-example-container p {
+    padding-right: 32px;
+    font-size: 14px;
+}
+
+/* --------------AQUI TENGO QUE INCORPORAR EL MENU POP UP--------------- */
+
+.bottom-footer-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bottom-footer-links-container a {
+    display: flex;
+    align-items: center;
+    
+    font-size: 12px;
+}
+
+.bottom-footer-social-logos-container {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.bottom-footer-social-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2px;
+    border: 2px solid var(--text-secondary-color);
+    border-radius: 600px;
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-footer-social-image-container svg {
+    color: var(--text-secondary-color);
 }
