@@ -797,7 +797,7 @@ h3 {
 
 .percent-content-news-card-container h4 {
     flex: 1;
-    
+
     font-size: 18px;
     color: var(--text-secondary-color);
     line-height: 1.6;
@@ -843,7 +843,7 @@ h3 {
 
 .payment-section-titles-container button {
     align-self: center;
-    
+
     font-size: 12px;
     font-weight: 500;
     padding: 8px 12px;
@@ -952,7 +952,7 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
     gap: 16px;
-    
+
     text-align: center;
 }
 
@@ -1057,7 +1057,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
     padding: 40px 0px 60px;
     background-color: var(--footer-bg);
 }
@@ -1096,11 +1096,20 @@ h3 {
     padding-right: 8px;
 }
 
+.top-footer-logo-container a:hover {
+    text-decoration-line: underline;
+}
+
 .top-footer-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 16px;
+}
+
+.top-footer-listitem:hover {
+    background-color: rgba(52, 69, 99, 0.5);
+    transition: 0.5s ease;
 }
 
 .top-footer-listitem a {
@@ -1150,6 +1159,8 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     flex: 1;
+
+    position: relative;
 }
 
 .language-example-container {
@@ -1166,7 +1177,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: var(--text-secondary-color);
 }
 
@@ -1176,6 +1187,45 @@ h3 {
 }
 
 /* --------------AQUI TENGO QUE INCORPORAR EL MENU POP UP--------------- */
+.language-example-container:hover .language-menu-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    background: linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    padding: 16px;
+    border-radius: 4px;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    overflow: hidden;
+    width: 150px;
+    height: 154px;
+}
+
+.language-menu-popup .language-menu-popup-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.language-menu-popup .language-menu-popup-option:hover {
+    transform: scale(1.3);
+}
+
+.language-menu-popup-option .icon-language-option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15px;
+}
 
 .bottom-footer-links-container {
     display: flex;
@@ -1183,11 +1233,17 @@ h3 {
     gap: 12px;
 }
 
-.bottom-footer-links-container a {
+.bottom-footer-links-container a,
+.bottom-footer-links-container p {
     display: flex;
     align-items: center;
-    
+
+    color: var(--text-secondary-color);
     font-size: 12px;
+}
+
+.bottom-footer-links-container a:hover {
+    text-decoration-line: underline;
 }
 
 .bottom-footer-social-logos-container {
@@ -1210,4 +1266,10 @@ h3 {
 
 .bottom-footer-social-image-container svg {
     color: var(--text-secondary-color);
+}
+
+.bottom-footer-social-image-container svg:hover {
+    width: 50%;
+    height: 50%;
+    transition: 0.1s ease;
 }

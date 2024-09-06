@@ -76,6 +76,7 @@
         border-radius: 4px;
         outline: none;
         border: none;
+        color: var(--text-color);
     }
 
     .container .header-image-mobile {
@@ -237,7 +238,7 @@
     .submit-section-container h2 {
         font-size: 28px;
     }
-    
+
 
     #submit-section .not-on-mobile-only input {
         font-size: 12px;
@@ -247,10 +248,10 @@
         min-width: 50%;
     }
 
-    
-.submit-section-container button {
-    min-width: 25%;
-}
+
+    .submit-section-container button {
+        min-width: 25%;
+    }
 }
 
 
@@ -422,7 +423,7 @@
         width: 80%;
         padding: 12px;
         align-self: stretch;
-        color: var(--text-secondary-color);
+        color: var(--text-color);
     }
 
     .header .video-header-container {
@@ -880,7 +881,7 @@
 
     #submit-section .not-on-mobile-only input {
         flex: 2;
-        
+
         font-size: 12px;
         padding: 12px;
         border-radius: 4px;
@@ -899,43 +900,49 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
     }
-    
+
     .top-footer-logo-container {
         flex-direction: column;
         justify-content: flex-start;
         gap: 16px;
         align-items: flex-start;
+        flex-basis: 150px;
     }
-    
+
     .logo-footer-image-container {
-        width: 140px;
+        width: 150px;
     }
-    
+
     .top-footer-logo-container a {
         padding-right: 0px;
     }
-    
+
     .top-footer-list {
         flex-direction: row;
-        justify-content: space-between;
-        gap: 44px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 32px;
+        align-self: stretch;
     }
 
     .top-footer-listitem {
         display: flex;
         justify-content: space-between;
         flex: 1;
+
+        padding: 8px;
     }
-    
+
     .top-footer-listitem a {
         gap: 16px;
     }
-    
+
     .top-footer-listitem .top-footer-listitem-title {
         font-size: 14px;
     }
-    
+
     .top-footer-listitem .top-footer-listitem-description {
         font-size: 12px;
     }
@@ -943,28 +950,28 @@
     .bottom-footer-container {
         justify-content: space-between;
         flex-direction: row;
-        gap: 60px;
+        gap: 0;
     }
 
     .bottom-footer-languages-and-links-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         flex: 1;
         gap: 20px;
-    
+
         max-width: 100%;
     }
-    
+
     .language-container {
         align-items: center;
-        flex: 0;
+        flex: 0 0 150px;
     }
-    
+
     .language-position-container {
         justify-content: center;
     }
-    
+
     .language-example-container {
         gap: 16px;
     }
@@ -972,36 +979,48 @@
     .icon-language-img {
         width: 16px;
     }
+
     .language-example-container p {
         padding-right: 0px;
         font-size: 16px;
+    }
+
+    .language-example-container:hover .language-menu-popup {
+        left: 85%;
+        top: -257%;
     }
 
     .bottom-footer-links-container {
         flex-direction: row;
         gap: 32px;
     }
-    
+
     .bottom-footer-links-container a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-        
+
         font-size: 14px;
     }
-    
+
     .bottom-footer-social-logos-container {
         gap: 20px;
     }
-    
+
     .bottom-footer-social-image-container {
         width: 25px;
         height: 25px;
     }
-    
+
     .bottom-footer-social-image-container svg {
         color: var(--text-secondary-color);
+    }
+
+    .bottom-footer-social-image-container svg:hover {
+        width: 70%;
+        height: 70%;
+        transition: 0.1s ease;
     }
 }
 
@@ -1224,14 +1243,19 @@
     /* ---------------------SUBMIT SECTION-------------------- */
 
     /* -----------------------FOOTER------------------------- */
-/* ---------------------TOP FOOTER---------------------- */
-/* --------------------------BOTTOM FOOTER------------------ */
+    /* ---------------------TOP FOOTER---------------------- */
+    /* --------------------------BOTTOM FOOTER------------------ */
 
-.bottom-footer-links-container a {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0;
-    
-    font-size: 12px;
-}
+    .language-example-container:hover .language-menu-popup {
+        left: 85%;
+        top: -295%;
+    }
+
+    .bottom-footer-links-container a {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0;
+
+        font-size: 12px;
+    }
 }
