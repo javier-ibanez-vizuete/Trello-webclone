@@ -922,7 +922,7 @@
     .top-footer-list {
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
+        align-items: stretch;
         gap: 32px;
         align-self: stretch;
     }
@@ -930,6 +930,7 @@
     .top-footer-listitem {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex: 1;
 
         padding: 8px;
