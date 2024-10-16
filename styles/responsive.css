@@ -27,13 +27,8 @@
     }
 
     .mobile-and-tablet {
-        display: inherit;
+        display: block;
     }
-
-    main #action-section .action-section-custom-cards-container::-webkit-scrollbar {
-        display: inherit;
-    }
-
 
     /* -----------------NAV------------ */
 
@@ -274,7 +269,7 @@
     }
 
     .action-section-custom-cards-container ::-webkit-scrollbar {
-        display: initial;
+        /* display: initial; */
     }
 
     .mobile-and-tablet {
@@ -286,7 +281,7 @@
     }
 
     main #action-section .action-section-custom-cards-container::-webkit-scrollbar {
-        display: block;
+        /* display: block; */
     }
 
 
@@ -599,6 +594,29 @@
         padding: 0px 20px 20px 20px;
     }
 
+    #action-section ::-webkit-scrollbar {
+        visibility: visible !important;
+    }
+
+    /* width */
+    #action-section ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    #action-section ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    #action-section ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    #action-section ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
     .custom-card-text-container h4 {
         font-size: 22px;
@@ -1206,7 +1224,7 @@
         margin-bottom: -100px;
     }
 
-    /* -----------------------MORE TRELLO SECTION */
+    /* -----------------------MORE TRELLO SECTION----------------------- */
 
     #more-trello-section {
         padding: 160px 0px 60px;
